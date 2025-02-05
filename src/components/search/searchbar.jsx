@@ -42,7 +42,7 @@ export default function SearchBar() {
     lapInfants: 0,
   });
   const [isPassengersOpen, setIsPassengersOpen] = useState(false);
-  const [tempPassengers, setTempPassengers] = useState(passengers); // Temporary state for passengers during editing
+  const [tempPassengers, setTempPassengers] = useState(passengers);
 
   const totalPassengers =
     passengers.adults +

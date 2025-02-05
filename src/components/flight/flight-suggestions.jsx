@@ -1,24 +1,10 @@
-import { useCallback, useEffect, useState } from "react";
+import { useState } from "react";
 import Breadcrumb from "../shared/breadcrumbs/breadcrumbs";
 import FlightCard from "./flight-card";
-import useService from "../../hooks/useServices";
-import { flightsService } from "../../services/flight/flightservice";
 
 export default function FlightsSection() {
   const [showMore, setShowMore] = useState(false);
   const [city, setCity] = useState("Riyadh");
-  const { data, error, loading, callService } = useService();
-
-  // Define the flight search parameters
-  const searchFlights = useCallback(() => {
-    callService(flightsService.searchFlights, {});
-  }, [callService]);
-
-  // useEffect(() => {
-  //   searchFlights();
-  // }, [searchFlights]);
-
-  console.log(data, error, loading, "HHHHHHHHH");
 
   const flights = [
     {

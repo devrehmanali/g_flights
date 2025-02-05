@@ -11,10 +11,7 @@ import FlightFAQ from "./components/flight/flight-faq";
 import MorePlaces from "./components/flight/more-places";
 import Footer from "./components/footer";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  getRapidAPIConfigRequest,
-  setFlightConfigValue,
-} from "./redux/reducers/ducks/FlightDuck";
+import { getRapidAPIConfigRequest } from "./redux/reducers/ducks/FlightDuck";
 import useCurrentLocation from "./hooks/useCurrentLocation";
 
 export default function App() {
