@@ -1,0 +1,69 @@
+#root {
+  width: 100%;
+}
+
+.flight {
+  letter-spacing: 0px;
+}
+
+/* Base form container */
+.form-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem; /* Adjust gap between elements */
+}
+
+/* Inward curve for the right edge of the "From" field */
+.from-field {
+  position: relative;
+  border-top-right-radius: 20px; /* Inward curve on the right side */
+  border-bottom-right-radius: 20px;
+  background-color: var(--tdee01b39543f1cac); /* Your custom background color */
+  border: 1px solid var(--tcc8c9ef487836e2b); /* Border color */
+}
+
+/* Inward curve for the left edge of the "To" field */
+.to-field {
+  position: relative;
+  border-top-left-radius: 20px; /* Inward curve on the left side */
+  border-bottom-left-radius: 20px;
+  background-color: var(--tdee01b39543f1cac);
+  border: 1px solid var(--tcc8c9ef487836e2b);
+}
+
+/* Circle container for the SVG (between the fields) */
+.KdjqBc {
+  background-color: var(--tdee01b39543f1cac); /* Background color from your variable */
+  border: 1px solid var(--tcc8c9ef487836e2b); /* Border color */
+  border-radius: 50%; /* Circular shape */
+  height: 36px; /* Size of the circle */
+  width: 36px; /* Size of the circle */
+  position: absolute;
+  top: 50%; /* Vertically center the circle */
+  left: 50%; /* Horizontally center */
+  transform: translate(-50%, -50%); /* Perfectly center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* Ensure it sits above other elements */
+  background: var(--tdee01b39543f1cac); /* Background color */
+  border: 1px solid var(--tcc8c9ef487836e2b); /* Border color */
+}
+
+.KdjqBc svg {
+  fill: var(--t9ab8d922307d428d); /* White color for the SVG icon */
+}
+.custom-shadow:focus,
+.custom-shadow:focus-visible {
+  box-shadow: inset 0 0 0 1px #669df6;
+  outline: #669df6 auto 1px;  /* Default focus outline */
+
+}
+
+.image-container:hover {
+  opacity: 0.4; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  transition: opacity 0.3s ease-in-out;
+}
